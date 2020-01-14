@@ -1,0 +1,144 @@
+a{
+	text-decoration: none;
+
+}
+
+html{
+box-sizing: border-box;
+font-size: 16px;
+
+}
+.header{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 105vh;
+	padding-top: 20px;
+	padding-left: 0;
+     	
+}
+.nav{
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+	padding-bottom: 3px;
+	position: absolute;
+	transform: all 0.3s;
+	background: white;
+	z-index: 9;
+	top: 0px;
+	width: 100%;
+}
+.nav ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.nav ul li{
+
+	display: flex;
+}
+.nav ul li a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.0em;
+	color: #333;
+	padding: 0.20rem 0.1;
+	margin: 10px 1.80rem;
+	text-transform: uppercase;
+
+
+}
+
+.full-nav{
+   background: white;
+   color: #18191d;
+   position: fixed;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   padding: 3.75rem;
+   z-index: 99;
+   overflow-x: hidden;
+   visibility: hidden;
+   opacity: 0;
+   transform: translateY(-100px);
+   transition: all .4s ease-in-out;
+
+}
+.full-nav.open{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+	transition: all .4s ease-in-out;
+	z-index: 99;
+}
+
+
+video#herovideo{
+	width: 100%;
+	opacity: 0.5;
+}
+video#herovideo:hover{
+	opacity: 1.0;
+}
+
+.vidContent{
+	position: absolute;
+	top: 290px;
+	color: #f1f1f1;
+	width: 100%;
+	padding:10px;
+	text-align: left;
+}
+.vidContent h1{
+	font-family: 'Oswald',sans-serif;
+	font-size: 3.5em;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.vidContent p{
+ font-family: 'Roboto Condensed',sans-serif;
+ font-size: 1em;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bs-docs-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  color: #99979c;
+  text-align: center;
+  background-color: #2a2730;
+  width: 100vw;
+}
+.bs-docs-footer a {
+  color: #fff;
+}
+.bs-docs-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.bs-docs-footer-links li {
+  display: inline-block;
+}
+.bs-docs-footer-links li + li {
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .bs-docs-footer {
+    text-align: left;
+  }
+  .bs-docs-footer p {
+    margin-bottom: 0;
+  }
+}
+
